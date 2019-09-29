@@ -1,0 +1,22 @@
+{
+  "name": "earthpull",
+  "version": "0.1.0",
+  "description": "A desktop application to receive beautiful background images of Earth",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/callumPearce/EarthPull.git"
+  },
+  "author": "Callum Pearce",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/callumPearce/EarthPull/issues"
+  },
+  "homepage": "https://github.com/callumPearce/EarthPull#readme",
+  "devDependencies": {
+    "electron": "^6.0.10"
+  }
+}

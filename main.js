@@ -1,6 +1,11 @@
 "use strict";
 
+/* Imports */
 const { app, BrowserWindow } = require('electron')
+const RedditContactor = require('./controllers/RedditContactor');
+
+/* Constants */
+const EP_CREDENTIALS_PATH = "ep_credentials.json"
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -19,7 +24,7 @@ function createWindow () {
   // and load the index.html of the app.
   win.loadFile('views/index.html')
 
-  get_signle_earth_porn_pic();
+  var rc =  new RedditContactor("ep_credentials.json");
 
   // Emitted when the window is closed.
   win.on('closed', () => {
@@ -52,7 +57,3 @@ app.on('activate', () => {
   }
 })
 
-function get_signle_earth_porn_pic(){
-  
-  var snoowrap = require('snoowrap');
-}

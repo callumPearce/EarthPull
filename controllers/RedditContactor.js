@@ -24,11 +24,10 @@ class RedditContactor {
         try{
             // Make a connection to reddit using snoowrap package
             this.reddit = new snoowrap({
-            userAgent: credentials.userAgent,
-            clientId: credentials.clientId,
-            clientSecret: credentials.clientSecret,
-            username: credentials.username,
-            password: credentials.password
+                clientId: credentials.clientId,
+                userAgent: credentials.userAgent,
+                clientSecret: "",
+                refreshToken: credentials.refreshToken // Genrate new refresh token here: https://not-an-aardvark.github.io/reddit-oauth-helper/
             });
             this.reddit.getHot().map(post => post.title).then(console.log);
         }

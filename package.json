@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/callumPearce/EarthPull#readme",
   "devDependencies": {
-    "electron": "^6.0.11"
+    "electron": "^7.2.4"
   },
   "dependencies": {
     "snoowrap": "^1.20.0"
